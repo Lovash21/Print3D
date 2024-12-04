@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <title>Print.INN</title>
+</head>
+<body>
+    <div class="main_container">
+        <header>
+            <div class="upper_menu_background_main">
+            </div>
+            <div class="wrapper_logo">
+                <div class="logo">
+                    <h1 id="text_upper_name_main">Print.INN</h1>
+                    <h1 id="text_upper_name_main_background">Print.INN</h1>
+                </div>
+                <div class="wraper_video_header">
+                    <video id="background_video_main" src="Assets/img/background_video_main.mp4" loop autoplay muted preload="auto"></video>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="dividing_strip">
+                <img src="Assets/img/divide.png" alt="">
+            </div>
+            <div class="content_pages">
+                <div class="pages_one">
+                    <div class="wrapper_text">
+                        <p>Возможность напечатать любую 3D-модель для реализации ваших идей</p>
+                    </div>
+                    <div class="divide_main_right">
+                        <h1>1.</h1>
+                    </div>
+                    <div class="wrapper_catalog_img">
+                        <div class="catalog_img">
+                            <section id="slider1">
+                                <input type="radio" name="slider1" id="s1" checked>
+                                <input type="radio" name="slider1" id="s2">
+                                <input type="radio" name="slider1" id="s3">
+                                <label for="s1" id="slide1"></label>
+                                <label for="s2" id="slide2"></label>
+                                <label for="s3" id="slide3"></label>
+                            </section>
+                            <div class="img_deco_line_right"><img src="Assets/img/img_line_deco.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages_one">
+                    <div class="wrapper_catalog_img_left">
+                        <div class="catalog_img">
+                            <section id="slider2">
+                                <input type="radio" name="slider2" id="s4" checked>
+                                <input type="radio" name="slider2" id="s5">
+                                <input type="radio" name="slider2" id="s6">
+                                <label for="s4" id="slide4"></label>
+                                <label for="s5" id="slide5"></label>
+                                <label for="s6" id="slide6"></label>
+                            </section>
+                            <div class="img_deco_line_left"><img src="Assets/img/img_line_deco.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="divide_main">
+                        <h1>2.</h1>
+                    </div>
+                    <div class="wrapper_text_right">
+                        <p>Выбирайте любой цвет для вашей 3D-модели</p>
+                    </div>
+                </div>
+                <div class="pages_one">
+                    <div class="wrapper_text">
+                        <p>Полезные мелочи и детали, которые упростят вашу жизнь</p>
+                    </div>
+                    <div class="divide_main_right">
+                        <h1>3.</h1>
+                    </div>
+                    <div class="wrapper_catalog_img">
+                        <div class="catalog_img">
+                            <section id="slider3">
+                                <input type="radio" name="slider3" id="s7" checked>
+                                <input type="radio" name="slider3" id="s8">
+                                <input type="radio" name="slider3" id="s9">
+                                <label for="s7" id="slide7"></label>
+                                <label for="s8" id="slide8"></label>
+                                <label for="s9" id="slide9"></label>
+                            </section>
+                            <div class="img_deco_line_right"><img src="Assets/img/img_line_deco.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dividing_strip_2">
+                <img src="Assets/img/divide2.png" alt="">
+            </div>
+            <div class="content_pages_2">
+                <div class="pages_two">
+                    <div class="example_text_main">
+                        <h1>Примеры работ</h1>
+                    </div>
+                    <div class="order_button">
+                        <a href="order.html"><button>Заказать</button></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function setupSlider(sliderId) {
+    const slides = document.querySelectorAll(`#${sliderId} input[type="radio"]`);
+    let currentIndex = 0;
+
+    function changeSlide() {
+        slides[currentIndex].checked = false;
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].checked = true;
+    }
+
+    setInterval(changeSlide, 3500);
+}
+    setupSlider('slider1');
+    setupSlider('slider2');
+    setupSlider('slider3');
+    </script>
+    <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+    <FileZilla3>
+        <Servers>
+            <Server>
+                <Host></Host>
+                <Port>21</Port>
+                <Protocol>0</Protocol>
+                <Type>0</Type>
+                <User>glerac</User>
+                <Logontype>2</Logontype>
+                <TimezoneOffset>0</TimezoneOffset>
+                <PasvMode>MODE_DEFAULT</PasvMode>
+                <MaximumMultipleConnections>0</MaximumMultipleConnections>
+                <EncodingType>Auto</EncodingType>
+                <BypassProxy>0</BypassProxy>
+                <Name>glerac@</Name>
+                <Comments />
+                <Colour>0</Colour>
+                <LocalDir />
+                <RemoteDir />
+                <SyncBrowsing>0</SyncBrowsing>
+                <DirectoryComparison>0</DirectoryComparison>
+            </Server>
+        </Servers>
+        <Settings>
+            <Setting name="Use Pasv mode">1</Setting>
+            <Setting name="Config Location">FileZilla\</Setting>
+            <Setting name="Kiosk mode">0</Setting>
+        </Settings>
+    </FileZilla3>
+</body>
+</html>

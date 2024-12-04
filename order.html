@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_order">
+        <form action="" id="main_form" method="POST">
+
+            <p>Введите ваш номер:</p>
+            <input type="text" name="phone_number" value="+7" maxlength="12">
+
+            <p>Описание заказа:</p>
+            <textarea class="desc_form" number="description" rows="5" cols="50" maxlength="250" 
+            placeholder="Введите описание или ссылку" wrap="hard"></textarea>
+
+            <p>Файл:</p>
+            <input type="file" name="file">
+
+            <input type="number" name="size">
+            <p>razmer v sm</p>
+
+            <label for="color-select">Выберите цвет:</label>
+                <select id="color-select" name="selected_color">
+                    <option value="red">Красный</option>
+                    <option value="green">Зеленый</option>
+                    <option value="blue">Синий</option>
+                    <option value="yellow">Желтый</option>
+                </select>
+
+                <button type="submit">1111</button>
+        </form>
+    </div>
+</body>
+</html>
